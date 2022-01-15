@@ -1,0 +1,493 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;500;600;700&family=Yeseva+One&display=swap");
+
+body{
+    margin:0 ;
+    font-family: montserrat;
+    font-family: "poppins", sans-serif;
+    flex-wrap: wrap;
+}
+
+nav {
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: 0;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0 5%;
+    height: 65px;
+    background-color: #7c7d80;
+}
+
+nav .logo {
+    float: left;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    color: rgb(251, 248, 248);
+}
+
+nav .links {
+    float: right;
+    padding: 0;
+    margin: 0;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav .links li {
+    list-style: none;
+}
+
+nav .links a {
+    display: block;
+    padding: 1em;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+#nav-toggle {
+    position: absolute;
+    top: -100px;
+}
+
+nav .icon-burger {
+    display: none;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+nav .icon-burger .line {
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
+    margin: 5px;
+    border-radius: 3px;
+    transition: all .3s ease-in-out;
+}
+.fa-shopping-cart{
+    color: white;
+}
+.fa-search{
+    color: white;
+}
+@media screen and (max-width: 768px) {
+    nav .logo {
+        float: none;
+        width: auto;
+        justify-content: center;
+    }
+
+    nav .links {
+        float: none;
+        position: fixed;
+        z-index: 9;
+        left: 0;
+        right: 0;
+        top: 100px;
+        bottom: 100%;
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: rgba(0, 0, 0, .8);
+        overflow: hidden;
+        box-sizing: border-box;
+        transition: all .5s ease-in-out;
+    }
+
+    nav .links a {
+        font-size: 20px;
+    }
+
+    nav :checked~.links {
+        bottom: 0;
+    }
+
+    nav .icon-burger {
+        display: block;
+    }
+
+    nav :checked~.icon-burger .line:nth-child(1) {
+        transform: translateY(10px) rotate(225deg);
+    }
+
+    nav :checked~.icon-burger .line:nth-child(3) {
+        transform: translateY(-10px) rotate(-225deg);
+    }
+
+    nav :checked~.icon-burger .line:nth-child(2) {
+        opacity: 0;
+    }
+
+}
+
+/* first-banner-css */
+
+section{ 
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.custom-color {
+    color: #ffad5a;
+}
+
+.top-text {
+    margin: 0;
+    font-family: "poppins";
+    font-weight: 700;
+    font-size: 60px;
+    padding-top: 190px;
+    padding-left: 180px;
+}
+
+
+
+.first-banner {
+    display: flex;
+    margin-left: 150px;
+}
+.first-banner-img:hover{
+    transform: scale(1.5) rotate(10deg);
+    transition:transform 2s ease-in-out ;
+}
+
+.first-banner-img {
+    padding-left: 280px;
+    padding-top: 150px;
+    overflow: hidden;
+   
+   
+}
+
+#first-banner-text {
+    font-family: "Poppins";
+    padding-left: 160px;
+    margin-bottom: 30px;
+    font-size: 18px;
+
+    
+}
+
+/* #first-banner-text b {
+    font-size: 25px;
+} */
+
+.preebook-btn {
+    text-decoration: none;
+    margin-top: 100px;
+    margin-left: 160px;
+    background-color: #E02C6D;
+    padding: 12px 38px;
+    border-radius: 5px;
+    color: rgb(250, 249, 249);
+    font-size: 16px;
+    font-family: "Poppins";
+    font-weight: 500;
+}
+
+p.style-btn {
+    text-align: right ;
+    margin-top: 20px;
+    color: rgba(224, 44, 109, 0.87);
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 25px;
+
+    height: 24px;
+
+
+}
+
+.fa-arrow-right{
+    margin-left: 10px;
+   position: relative;
+
+}
+/*<<<<<<<<<<<<<<<<<< 
+card css start 
+>>>>>>>>>>>>>>>>>>>*/
+.container{
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+    padding-top: 30px;
+    font-size: 24px;
+}
+.popular-text{
+    text-align: center;
+}
+.grid{
+    margin: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:30px ;
+    align-items: center;
+
+}
+.grid > article{
+border: none;
+box-shadow: 2px 2px 6px 0px rgb(0,0,0,0.3);
+border-radius: 5px;
+width: 450px;
+}
+.grid > article img{
+    width: 90%;
+    margin: 10px  ;
+}
+.text{
+    padding: 0px 20px ;
+}
+.fa-star {
+    font-size: 20px;
+}
+
+.fa-star.filled {
+    color: gold;
+}
+
+.fa-star-half-alt {
+    color: gold;
+  font-size: 20px;
+  
+  
+   
+}
+
+
+
+@media (max-width: 768px) {
+    .grid{
+        grid-template-columns: repeat(2, 1fr );
+    }
+}
+@media (max-width: 500px) {
+    .grid {
+    grid-template-columns: repeat(2, 1fr);
+    }
+.grid > article{
+    text-align: center;
+}
+}
+/*<<<<<<<<<<<<<<<< 
+grid section end
+>>>>>>>>>>>>>>> */
+
+/* contact form section start */
+.contact-title {
+    text-align: center;
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 24px;
+    margin-top: 70px;
+
+}
+#contact-img {
+    width: 30%;
+    margin-top: 50px;
+    
+}
+
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 0px 0px;
+    margin-top: 70px;
+}
+
+.container:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    /* background: url("/") no-repeat center; */
+    background-size: cover;
+    filter: blur(50px);
+    z-index: -1;
+}
+
+.contact-box {
+    max-width: 850px;
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr); */
+    /* justify-content: center; */
+    /* align-items: center; */
+    text-align: center;
+    background-color: #fff;
+    /* box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.30); */
+    padding-right: 80px;
+    padding-left: 40px;
+    /* border-radius: 20px; */
+
+}
+
+.left {
+    background-size: cover;
+    height: 100%;
+}
+
+.right {
+    padding: 25px 40px;
+}
+
+h2 {
+    position: relative;
+    padding: 0 0 10px;
+    margin-bottom: 10px;
+}
+
+h2:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #2ecc71;
+}
+
+.field {
+    width: 100%;
+    border: 2px solid rgba(0, 0, 0, 0);
+    outline: none;
+    background-color: rgba(230, 230, 230, 0.6);
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: .3s;
+}
+
+.field:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+    min-height: 150px;
+}
+
+.btn {
+    width: 30%;
+    padding: 0.5rem 1rem;
+    background-color: #2ecc71;
+    color: #fff;
+    font-size: 1.2rem;
+    border:none  ;
+    outline: none;
+    cursor: pointer;
+    transition: .3s;
+    font-weight: 700;
+}
+
+.btn:hover {
+    background-color: #27ae60;
+}
+
+.field:focus {
+    border: 2px solid rgba(30, 85, 250, 0.47);
+    background-color: #fff;
+}
+/* contact form section end */
+
+/* footer section */
+.footer-title {
+    background-color: #090930;
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+.footer-section {
+    padding: 80px 0px;
+    text-align: center;
+    background-color: #090930;
+    color: white;
+    margin: 0%;
+    height: 250px;
+}
+
+.footer-section h3 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+
+}
+
+.footer-section p {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.footer-icon {
+    margin: 10px 0px;
+}
+
+.footer-icon ul {
+    list-style-type: none;
+}
+
+.footer-icon ul li {
+    display: inline-block;
+    margin: 10px;
+}
+
+.footer-icon ul li a {
+    color: white;
+    padding: 5px 0px;
+    background-color: #3632325d;
+    border-radius: 100px;
+    display: inline-block;
+    width: 50px;
+    height: 35px;
+    align-content: center;
+}
+.masum{
+    margin-top: 50px;
+    color: goldenrod;
+}
+ /* Mobile Devices */
+ @media only  screen and (max-width:688px){
+     .container,
+     .footer-title {
+         width: 100%;
+     }
+     .first-banner,
+     .footer-title, .container, .section {
+        grid-template-columns: repeat(1, 1fr); 
+     }
+     
+     .container,
+     .first-banner {
+          
+         flex-direction: column;
+        
+     }
+ }
+ /* tablet devices */
+ @media only screen and (min-width: 688px) and (max-width:992px){
+     .container{
+         width: 100%;
+     }
+     .container, .section, .grid{
+      grid-template-columns: repeat(2, 1fr);
+     }
+ }
