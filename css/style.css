@@ -140,6 +140,11 @@ section{
 
 .custom-color {
     color: #ffad5a;
+    text-align: center;
+}
+.custom-color  h1{
+text-align: center;
+color: greenyellow;
 }
 
 .top-text {
@@ -293,8 +298,9 @@ grid section end
 
 }
 #contact-img {
-    width: 30%;
-    margin-top: 50px;
+    width: 20%;
+    margin-top: 80px;
+    display: flex;
     
 }
 
@@ -409,7 +415,7 @@ textarea {
 
 /* footer section */
 .footer-title {
-    background-color: #090930;
+    background-color: #141475;
     flex-direction: column;
     width: 100%;
     
@@ -420,7 +426,7 @@ textarea {
     text-align: center;
     background-color: #090930;
     color: white;
-    margin: 0%;
+    margin: 0px;
     height: 250px;
 }
 
@@ -453,11 +459,11 @@ textarea {
 .footer-icon ul li a {
     color: white;
     padding: 5px 0px;
-    background-color: #3632325d;
+    background-color: #2c29295d;
     border-radius: 100px;
     display: inline-block;
-    width: 50px;
-    height: 35px;
+    width: 30px;
+    height: 25px;
     align-content: center;
 }
 .masum{
